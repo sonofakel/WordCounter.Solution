@@ -6,7 +6,7 @@ namespace WordCounter.Models
   public class RepeatCounter
   {
     private string _wordToCount;
-    private  string _inputString;
+    private string _inputString;
     private static int _wordCount;
 
     public RepeatCounter (string wordToCount, string inputString)
@@ -18,8 +18,18 @@ namespace WordCounter.Models
 
     public int CountRepeats()
     {
-        return _wordCount;
+      if (_inputString.Contains(_wordToCount))
+      {
+      _wordCount ++;
 
+      }
+      return _wordCount;
     }
+    // public static void ClearAll()
+    // {
+    //   _wordCount = 0;
+    // }
   }
 }
+
+// _inputString.Split().ToString().Contains(_wordToCount)

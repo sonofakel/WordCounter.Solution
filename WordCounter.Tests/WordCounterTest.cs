@@ -17,5 +17,18 @@ namespace WordCounter.Tests
       Assert.AreEqual(expected, actual);
 
     }
+    [TestMethod]
+    public void CountRepeats_SentenceContainOneWord_1()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("lamp", "I love lamp");
+      int expected = 1;
+      int actual = testRepeatCounter.CountRepeats();
+      Assert.AreEqual(expected, actual);
+
+    }
+    // public void Dispose()
+    //  {
+    //      RepeatCounter.ClearAll();
+    //  }
   }
 }
