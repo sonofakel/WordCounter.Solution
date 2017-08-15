@@ -26,6 +26,15 @@ namespace WordCounter.Tests
       Assert.AreEqual(expected, actual);
 
     }
+    [TestMethod]
+    public void CountRepeats_SentenceContainTwoWords_2()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("you", "I love you and you love me");
+      int expected = 2;
+      int actual = testRepeatCounter.CountRepeats();
+      Assert.AreEqual(expected, actual);
+
+    }
     // public void Dispose()
     //  {
     //      RepeatCounter.ClearAll();

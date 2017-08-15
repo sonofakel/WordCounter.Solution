@@ -18,10 +18,14 @@ namespace WordCounter.Models
 
     public int CountRepeats()
     {
-      if (_inputString.Contains(_wordToCount))
-      {
-      _wordCount ++;
+      string[] inputSplit = _inputString.Split(' ');
 
+      foreach(string word in inputSplit)
+      {
+          if (_wordToCount.Contains(word))
+          {
+            _wordCount ++;
+          }
       }
       return _wordCount;
     }
