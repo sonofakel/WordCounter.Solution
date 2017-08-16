@@ -24,7 +24,7 @@ namespace WordCounter.Models
 
       foreach(string word in inputSplit)
       {
-          if (lowerWordToCount.Contains(word))
+          if (word.Contains(lowerWordToCount) && word.Length == lowerWordToCount.Length)
           {
             _wordCount ++;
           }

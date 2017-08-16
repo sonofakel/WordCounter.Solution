@@ -1,0 +1,21 @@
+body {
+  background-image: url("../../img/darkness.png");
+  color: #7b7b7b;
+  text-align: center;
+}
+
+.jumbotron {
+  text-align: center;
+  background-image: url("../../img/jumbo.png");
+  letter-spacing: 5px;
+}
+
+label {
+  color: #DCFBD2;
+  letter-spacing: 2px;
+}
+
+.form-control {
+  margin: 2%;
+  width: 97%
+}
