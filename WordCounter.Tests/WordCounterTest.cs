@@ -35,6 +35,15 @@ namespace WordCounter.Tests
       Assert.AreEqual(expected, actual);
 
     }
+    [TestMethod]
+    public void CountRepeats_SentenceContainPartialWord_0()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("hou", "I love your house");
+      int expected = 0;
+      int actual = testRepeatCounter.CountRepeats();
+      Assert.AreEqual(expected, actual);
+
+    }
     // public void Dispose()
     //  {
     //      RepeatCounter.ClearAll();
