@@ -15,6 +15,7 @@ _This web app will return how frequently a word appears in a given string. The u
 |  User enters a word and a sentence that contains the word 2 times, 2 is returned | you, I love you and you love me  |  2  |  Logical next step in increasing complexity     |
 |  User enters a partial word and a sentence that contains the full word and 0 is returned | ho, I love house   | 0   |  Logical next step in increasing complexity   |
 |  User enters a word in capital letters and a sentence that contains the word in lower-case and 1 is returned | BUNNY, I see a bunny.   | 1   |  Logical next step in increasing complexity   |
+|  |  |   |   |
 
 
 
@@ -35,5 +36,7 @@ _No known Bugs_
 * _ASP.NET MVC_
 
 ### License
+
+MIT License 
 
 Copyright (c) 2015 **_Charlie Kelson_**

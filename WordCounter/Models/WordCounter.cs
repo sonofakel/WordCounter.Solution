@@ -29,7 +29,6 @@ namespace WordCounter.Models
             _wordCount ++;
           }
       }
-      Console.WriteLine(_wordCount);
       return _wordCount;
     }
     // public static void ClearAll()
